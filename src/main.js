@@ -11,6 +11,9 @@ import LandingPages from './pages/Admin/LandingPages.vue';
 import LandingCustomers from './pages/Admin/LandingCustomers.vue';
 import LandingCropOrigin from './pages/Admin/LandingCropOrigin.vue';
 import LandingFaq from './pages/Admin/LandingFaq.vue';
+import LandingOfficeAddress from './pages/Admin/LandingOfficeAddress.vue';
+import LandingContact from './pages/Admin/LandingContact.vue';
+import LandingFooter from './pages/Admin/LandingFooter.vue';
 
 const routes = [
     { path: '/', component: Index },
@@ -20,7 +23,10 @@ const routes = [
     {path:'/landing/pages', component:LandingPages,props:true},
     {path:'/landing/customers', component:LandingCustomers,props:true},
     {path:'/landing/croporigin', component:LandingCropOrigin,props:true},
-    {path:'/landing/faq', component:LandingFaq,props:true},
+    {path:'/landing/officeaddress', component:LandingOfficeAddress,props:true},
+    {path:'/landing/contact', component:LandingContact,props:true},
+    {path:'/landing/footer', component:LandingFooter,props:true},
+    
       // EVERYTHING CONCERNING LANDING 
     {path:'/verifyotp' , component:Verifyotp,props:true},
   ]
