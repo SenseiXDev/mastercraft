@@ -1,6 +1,5 @@
 <script setup >
-import Header from '../components/Header.vue';
-import Sidebar from '../components/Sidebar.vue';
+
 import supabase from '../lib/supabaseClient.js';
 import { onMounted , getCurrentInstance,ref} from 'vue'
 
@@ -9,14 +8,13 @@ const { proxy } = getCurrentInstance();
 const $notiflix = proxy.$notiflix;
 
 
+
 </script>
 <template>
     <!--**********************************
         Main wrapper start
     ***********************************-->
 
-<Header/>
-<Sidebar/>
 <div class="content-body">
   <div class="container-fluid">
     <div class="card">

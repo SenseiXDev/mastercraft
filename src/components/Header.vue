@@ -1,3 +1,25 @@
+<script setup>
+import supabase from '../lib/supabaseClient.js';
+import { onMounted , getCurrentInstance,ref} from 'vue'
+const GetSession=async()=>{
+  const {
+  data: { user }
+} = await supabase.auth.getUser()
+console.log(user)
+if (user) {
+
+  // User is logged in
+     console.log(user)
+} else {
+  // Redirect to login or show guest view
+ // User is logged in
+      window.location.href = '/'
+}
+}
+onMounted(()=>{
+    GetSession();
+})
+</script>
 <template>
     	<div id="main-wrapper">
 		<!--**********************************
