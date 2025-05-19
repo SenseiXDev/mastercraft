@@ -14,6 +14,7 @@ import LandingFaq from './pages/Admin/LandingFaq.vue';
 import LandingOfficeAddress from './pages/Admin/LandingOfficeAddress.vue';
 import LandingContact from './pages/Admin/LandingContact.vue';
 import LandingFooter from './pages/Admin/LandingFooter.vue';
+import LandingChat from './pages/Admin/LandingChat.vue';
 
 const routes = [
     { path: '/', component: Index },
@@ -26,6 +27,7 @@ const routes = [
     {path:'/landing/officeaddress', component:LandingOfficeAddress,props:true},
     {path:'/landing/contact', component:LandingContact,props:true},
     {path:'/landing/footer', component:LandingFooter,props:true},
+    {path:'/landing/chat', component:LandingChat,props:true},
     
       // EVERYTHING CONCERNING LANDING 
     {path:'/verifyotp' , component:Verifyotp,props:true},
